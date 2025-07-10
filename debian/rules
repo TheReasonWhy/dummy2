@@ -19,15 +19,15 @@ build: check_dependencies
 install: build
 	dh $@
 # Создаем директории для исполняемого файла
-	mkdir -p debian/dummy2/usr/bin
+	mkdir -p debian/dummy8/usr/bin
 # Копируем собранный исполняемый файл
-	install -m755 build/appdummy2 debian/dummy2/usr/bin/
+	install -m755 build/appdummy8 debian/dummy8/usr/bin/
 # Создаем символическую ссылку dummy1 на appdummy1
-	ln -sf /usr/bin/appdummy2 debian/dummy2/usr/bin/dummy2
-	mkdir -p $(CURDIR)/debian/dummy2/usr/share/applications
-	mkdir -p $(CURDIR)/debian/dummy2/usr/share/icons/hicolor/256x256/apps
-	install -Dm644 appdummy2.desktop $(CURDIR)/debian/dummy2/usr/share/applications/
-	install -Dm644 dummy2.png $(CURDIR)/debian/dummy2/usr/share/icons/hicolor/256x256/apps/
+	ln -sf /usr/bin/appdummy8 debian/dummy8/usr/bin/dummy8
+	mkdir -p $(CURDIR)/debian/dummy8/usr/share/applications
+	mkdir -p $(CURDIR)/debian/dummy8/usr/share/icons/hicolor/256x256/apps
+	install -Dm644 appdummy8.desktop $(CURDIR)/debian/dummy8/usr/share/applications/
+	install -Dm644 dummy8.png $(CURDIR)/debian/dummy8/usr/share/icons/hicolor/256x256/apps/
 
 check_dependencies:
 	@echo "Проверка и установка необходимых зависимостей..."

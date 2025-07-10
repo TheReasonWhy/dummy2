@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VK Play
+Comment=Простой пример приложения на C++
+Exec=/usr/bin/appdummy8
+Icon=/usr/share/icons/hicolor/256x256/apps/dummy8.png
+Terminal=false
+Categories=Utility;

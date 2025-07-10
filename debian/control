@@ -1,4 +1,4 @@
-Source: dummy2
+Source: dummy8
 Section: utils
 Priority: optional
 Maintainer: Ваше Имя <ваш.email@example.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (= 13), cmake, build-essential
 Standards-Version: 4.5.0
 Homepage: http://example.com
 
-Package: dummy2
+Package: dummy8
 Version: 4.5-1
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, build-essential, cmake

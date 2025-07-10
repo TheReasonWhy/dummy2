@@ -1,0 +1,28 @@
+{
+  "app-id": "com.example.dummy8",
+  "runtime": "org.kde.Platform",
+  "runtime-version": "6.4",
+  "sdk": "org.kde.Sdk",
+  "command": "appdummy8",
+  "finish-args": [
+    "--socket=x11",
+    "--socket=wayland",
+    "--share=network",
+    "--device=dri",
+    "--filesystem=home"
+  ],
+  "modules": [
+    {
+      "name": "dummy8",
+      "buildsystem": "cmake",
+      "builddir": true,
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ]
+    }
+  ]
+}
+
